@@ -1,7 +1,7 @@
-publysher/hugo
-==============
+ulrichschreiner/docker-hugo
+===========================
 
-`publysher/hugo` is a [Docker](https://www.docker.io) base image for static sites generated with [Hugo](http://gohugo.io). 
+`ulrichschreiner/docker-hugo` is a [Docker](https://www.docker.io) base image for static sites generated with [Hugo](http://gohugo.io). 
 
 Images derived from this image can either run as a stand-alone server, or function as a volume image for your web server. 
 
@@ -23,7 +23,7 @@ The image is based on the following directory structure:
 
 In other words, your Hugo site resides in the `site` directory, and you have a simple Dockerfile:
 
-	FROM publysher/hugo 
+	FROM ulrichschreiner/docker-hugo 
 
 
 Building your site
@@ -60,7 +60,3 @@ The image is also suitable for use as a volume image for a web server, such as [
 	docker run -d --volumes-from site-data --name site-server -p 80:80 nginx
 
 
-Examples
---------
-
-For an example of a Hugo site, have a look at https://github.com/publysher/blog.publysher.nl
