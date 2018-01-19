@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.7
 MAINTAINER Ulrich Schreiner <ulrich.schreiner@gmail.com>
 
 # Download and install hugo
