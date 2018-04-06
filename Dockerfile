@@ -2,7 +2,7 @@ FROM alpine:3.7
 MAINTAINER Ulrich Schreiner <ulrich.schreiner@gmail.com>
 
 # Download and install hugo
-ENV HUGO_VERSION 0.38
+ENV HUGO_VERSION 0.38.1
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
 
 RUN apk add --update \
